@@ -1,0 +1,102 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+  background: rgb(252, 249, 249);
+}
+
+
+.one {
+  background: #ccc;
+}
+
+.two {
+  background: tomato;
+  width: 25%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.one ul {
+  text-align: center;
+}
+
+.one ul, .two ul {
+  list-style: none;
+}
+
+.one ul li {
+  display: inline;
+}
+
+.one ul li a, .two ul li a {
+  color: #222;
+  text-decoration: none;
+  text-transform: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.one ul li a {
+  padding: 40px;
+  display: inline-block;
+}
+
+.one ul li a:hover {
+  background: #222;
+  color: #ccc;
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+  text-shadow: 0 0 10px #ccc;
+}
+
+.two ul {
+  padding: 0;
+}
+
+.two ul li a {
+  padding: 15px;
+  display: block;
+}
+
+.two ul li a:hover {
+  background: #222;
+  color: tomato;
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+  text-shadow: 0 0 10px tomato;
+}
+
+
+
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: rgb(240, 4, 4);}
+ul li:hover ul {display:contents;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li ul li { 
+  background: #555; 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #666;}
